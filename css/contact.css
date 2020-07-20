@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+html{
+    background: linear-gradient(to bottom, #9966ff 30%, #ff99cc 75%) no-repeat;
+    height: 100%;
+    
+}
+.navbar{
+    display: flex;
+    display: inline;
+    /* background:purple; */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(148, 40, 170);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li  a:hover{
+    background-color: lightblue ;
+
+}
+.avi {
+   margin-top: 20px;
+   margin-left: 42%;
+   height: 30vh;
+   width: 200px;
+   border-radius: 50%;
+}
+.container1{
+    height: 50vh;
+    margin-left: 350px;
+    margin-top:30px;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    /* border: solid black 2px; */
+}
+
+ h1{
+    text-align: center;
+    color:white;
+}
+h2{
+   text-align: center;
+   color:white;
+
+}
+h3{
+   text-align: center;
+}
+p{
+   text-align: center;
+}
+.btn {
+   text-decoration: none;
+   display: inline-block;
+   margin-left: 40%;
+   font-size: 18px;
+   color: #fff;
+   background: #9966ff;
+   padding: 13px 20px;
+   border-radius: 1.3em;
+   margin-bottom: 100px;
+}
+
+.btn:hover {
+   background: rgb(132, 139, 127);
+   color: #333;
+}
+/* Contact Form */
+#contact-form .form-group {
+   margin-bottom: 0px;
+}
+#contact-form label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px #ddd solid;
+}
+#contact-form textarea {
+   height: 150px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+   outline: none;
+   border-color: #ACDF87;
+}
+footer{
+   /* margin-top:20px; */
+   text-align: center;
+   color:white;
+   background-color: rgb(148, 40, 170);
+   padding: 30px;
+
+}
+.social{
+   margin-top:5px;
+   height:5vh;
+}
+
+@media (max-width: 800px)
+{
+   
+
+}

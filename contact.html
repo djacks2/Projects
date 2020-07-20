@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derek's Project</title>
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
+   
+</head>
+
+<body>
+    
+<header>
+    <nav class="navbar">
+       <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script>
+        function validateForm() {
+            var x = document.forms["form1"]["name"].value;
+            var y = document.forms["form1"]["email"].value;
+            if (x == "" && y == "") {
+              alert("Name and email must be filled out");
+              return false;
+            } else if (x == ""){
+                alert("Name must be filled out");
+                return false;
+            } else if (y == "") {
+                alert("Email must be filled out")
+                return false;
+            } else {
+                return true
+            }
+          }
+        </script>
+        <img class="avi" src="./img/Derek.jpg">
+        <h2>Derek Jackson II<br>
+            Email: derek.jack2@gmail.com
+        </h2>
+    <form name="form1" action="/submit.php" onsubmit="return validateForm()" method="POST" id="contact-form">
+        <div class="container1">
+            <h3>Contact Us</h3>
+            <p>Please fill out the form below to contact us</p>
+        
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message or Questions:</label>
+                    <textarea name="message" id="message"></textarea>
+                    <button type="submit" class="btn">Submit</button><br>
+                </div>
+        </div>
+    </form>
+    <footer>
+    <p> Derek's Projects &copy; 2020, All Rights Reserved</p>
+    <a target="_blank" rel="noopener" href="https://docs.google.com/document/d/1RWqJ6eFB6TftCb7msEaQoPxs1QrO_GfFe5zu-X9rNDk/edit"><img class="social" src="https://image.flaticon.com/icons/svg/1251/1251847.svg" alt="facebook logo"></a>
+    <a target="_blank" rel="noopener" href="https://github.com/djacks2"><img class="social" src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/GitHub-512.png" alt="twitter logo"></a> 
+    <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/derek-jackson-ii-00887a1aa/"><img class="social" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png" alt="twitter logo"></a> 
+    </footer>
+</body>
+
+</html>
